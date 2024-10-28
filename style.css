@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*topo da pagina*/
+
+nav {
+    background-color: #E0DCE4;
+    padding: 10px; 
+}
+
+nav #img-container {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+
+    padding-top: 4.875rem;
+    padding-bottom: 3.6875rem;
+}
+
+
+@media (min-width: 80rem){
+    nav #img-container img{
+        width: 13.125rem;
+        height: 4.5rem;
+    }
+}
+
