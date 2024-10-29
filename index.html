@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>todo</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -14,6 +18,65 @@
         </div>
     </nav>
 
-    
+    <section id="new-task">
+        <input type="text" placeholder="Adicione uma nova tarefa">
+        <button> <strong class="button-text">Criar</strong><img src="assets/PlusCircleRegular.svg" alt="sinal de adição"></button>
+    </section>
+
+
+
+
+
+    <section class="task">
+
+        <fieldset id="info">
+
+            <div id="task-1">
+                <strong>Tarefas criadas</strong> <span>0</span>
+            </div>
+
+            <div id="task-2">
+                <strong>Concluídas</strong> <span>0</span>
+            </div>
+
+        </fieldset>
+        
+        <fieldset id="list">
+             <!--<ul>
+                <li id="tempo" class="base-list">
+                    
+                   <button><img src="assets/CircleRegular.svg" alt=""></button> 
+
+                    <p>
+                        Integer urna interdum massa libero auctor neque turpis turpis semper. Duis vel sed fames integer.
+                    </p>
+
+                    <button><img src="assets/Delete.svg" alt=""></button>
+                </li>
+
+
+                <li id="completed" class="base-list">
+                    <button><img src="assets/CheckCircleFill.svg" alt=""></button>
+                    <s>
+                        Integer urna interdum massa libero auctor neque turpis turpis semper. Duis vel sed fames integer.
+                    </s>
+
+                    <button><img src="assets/Delete.svg" alt=""></button>
+                </li>
+            </ul>-->
+        </fieldset>
+    </section>
+
+   <section id="fill">
+        <img src="assets/ClipboardTextRegular.svg" alt="prancheta">
+
+        <p>
+            <strong>Você ainda não tem tarefas cadastradas</strong>
+        <br>
+            Crie tarefas e organize seus itens a fazer
+        </p>
+    </section>
+        
+    <script src="script.js"></script>
 </body>
 </html>

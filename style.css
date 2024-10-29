@@ -3,11 +3,12 @@
     padding: 0;
 }
 
-/*topo da pagina*/
+/*top page*/
 
 nav {
     background-color: #E0DCE4;
-    padding: 10px; 
+    z-index: 1;
+    position: relative;
 }
 
 nav #img-container {
@@ -16,14 +17,133 @@ nav #img-container {
     justify-content: center;
 
     padding-top: 4.875rem;
-    padding-bottom: 3.6875rem;
+    padding-bottom: 5rem;
 }
 
 
 @media (min-width: 80rem){
+
+    nav #img-container{
+        padding-top: 4.5rem;
+        padding-bottom: 5rem;
+    }
+
     nav #img-container img{
         width: 13.125rem;
         height: 4.5rem;
     }
 }
 
+/*input*/
+
+#new-task {
+    display: flex;
+    justify-content: center;
+    position: absolute; 
+    z-index: 2; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    top: calc(4.875rem + 1.75rem + 3.6875rem); 
+    gap: 8px;
+}
+
+#new-task input{
+     /* Remover a aparência padrão */
+    appearance: none; 
+    -webkit-appearance: none; 
+    -moz-appearance: none; 
+
+    /* Estilos adicionais */
+    background: none; 
+    border: none; 
+    padding: 0; 
+    margin: 0; 
+    color: inherit; 
+    cursor: pointer; 
+
+    /* Propriedades de estilo do botão */
+    width: 44.5; 
+    height: 3.25rem;
+    padding-left: 1.125rem;
+    align-items: center;
+    border-radius: 0.5rem; 
+    background-color: #F0EDF2; 
+    gap: 0.5rem;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); 
+
+    border: 2px solid #E0DCE4; 
+}
+
+@media (min-width: 80rem){
+    #new-task input{
+        width: 46rem;
+    }
+}
+
+/*end input*/
+
+
+
+
+/*botão*/
+
+#new-task button {
+    /* Remover a aparência padrão */
+    appearance: none; 
+    -webkit-appearance: none; 
+    -moz-appearance: none; 
+    
+    /* Estilos adicionais */
+    background: none; 
+    border: none; 
+    padding: 0; 
+    margin: 0; 
+    color: inherit; 
+    cursor: pointer; 
+    
+    /* Propriedades de estilo do botão */
+    width: 3.25rem; 
+    height: 3.25rem; 
+    border-radius: 0.5rem; 
+    background-color: #6F3CC3; 
+    color: #E0DCE4;
+    gap: 0.5rem;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+}
+
+#new-task button:hover {
+    background-color: #9359F3; 
+}
+
+.button-text {
+    display: none; 
+}
+
+@media (min-width: 80rem) {
+    #new-task {
+        top: calc(4.875rem + 3.3125rem + 3.6875rem);
+    }
+
+    #new-task .button-text{
+        font-family: inter;
+        font-size: 14px;
+    }
+
+    .button-text {
+        display: inline; 
+    }
+ 
+    #new-task button {
+        width: auto; 
+        padding: 0 12px; 
+    }
+}
+
+/*end button*/
